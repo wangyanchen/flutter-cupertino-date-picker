@@ -267,6 +267,7 @@ class _TimePickerWidgetState extends State<TimePickerWidget> {
       alignment: Alignment.center,
       child: Text(
         DateTimeFormatter.formatDateTime(value, format, widget.locale),
+        textScaleFactor: 1,
         style:
             widget.pickerTheme.itemTextStyle ?? DATETIME_PICKER_ITEM_TEXT_STYLE,
       ),
