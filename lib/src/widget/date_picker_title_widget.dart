@@ -57,7 +57,7 @@ class DatePickerTitleWidget extends StatelessWidget {
           TextStyle(
               color: Theme.of(context).unselectedWidgetColor, fontSize: 16.0);
       cancelWidget =
-          Text(DatePickerI18n.getLocaleCancel(locale), style: textStyle);
+          Text(DatePickerI18n.getLocaleCancel(locale), textScaleFactor: 1, style: textStyle);
     }
     return cancelWidget;
   }
@@ -69,7 +69,7 @@ class DatePickerTitleWidget extends StatelessWidget {
       TextStyle textStyle = pickerTheme.confirmTextStyle ??
           TextStyle(color: Theme.of(context).primaryColor, fontSize: 16.0);
       confirmWidget =
-          Text(DatePickerI18n.getLocaleDone(locale), style: textStyle);
+          Text(DatePickerI18n.getLocaleDone(locale), textScaleFactor: 1, style: textStyle);
     }
     return confirmWidget;
   }
