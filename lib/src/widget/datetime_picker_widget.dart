@@ -312,6 +312,7 @@ class _DateTimePickerWidgetState extends State<DateTimePickerWidget> {
       alignment: Alignment.center,
       child: Text(
         DateTimeFormatter.formatDate(dateTime, format, widget.locale),
+        textScaleFactor: 1,
         style:
             widget.pickerTheme.itemTextStyle ?? DATETIME_PICKER_ITEM_TEXT_STYLE,
       ),
@@ -325,6 +326,7 @@ class _DateTimePickerWidgetState extends State<DateTimePickerWidget> {
       alignment: Alignment.center,
       child: Text(
         DateTimeFormatter.formatDateTime(value, format, widget.locale),
+        textScaleFactor: 1,
         style:
             widget.pickerTheme.itemTextStyle ?? DATETIME_PICKER_ITEM_TEXT_STYLE,
       ),
